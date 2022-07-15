@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #player {
+        transition: margin-top 10s;
+        transition: transform 3s;
+        width: 550px;
+        height: 550px;
+        margin-left: 60px;
+      }
+      #player:hover {
+        /* transform: scale(1.5); */
+        transform: rotate(45deg);
+      }
+      #field {
+        border: dashed 4px green;
+        width: 600px;
+        height: 600px;
+        margin-left: 80px;
+      }
+      .ball {
+        border: solid 1px black;
+        background-image: url(../Images/player.png);
+        height: 1150px;
+        width: 1150px;
+      }
+      .ball:hover {
+        border: solid 1px black;
+        background-image: url(../Images/ball.png);
+        height: 250px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="field">
+      <img id="player" src="../Images/player.png" alt="A man kicking a ball" />
+      <div class="ball">
+        <!-- <img src="../Images/ball.png" alt="ball" /> -->
+      </div>
+    </div>
+  </body>
+</html>

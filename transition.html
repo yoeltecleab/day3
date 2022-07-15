@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <link rel="stylesheet" href="../stylesheets/transition.css" />
+
+    <style>
+      h1 {
+        background-color: aqua;
+        color: rgb(255, 0, 128);
+        width: 100vw;
+        height: 20vh;
+        text-align: center;
+      }
+      .box {
+        border-top: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        transition: margin-left 3s;
+      }
+      .box:hover {
+        background-color: green;
+        margin-left: 500px;
+      }
+
+      .box2 {
+        border-top: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: blue;
+        transition: transform 3s;
+      }
+
+      .box2:hover {
+        height: 150px;
+        width: 150px;
+        background-color: yellow;
+        transform: rotate(90deg);
+      }
+
+      .box3 {
+        border-top: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: purple;
+        transition: transform 1s;
+      }
+
+      .box3:hover {
+        height: 150px;
+        width: 150px;
+        background-color: maroon;
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body style="color: white">
+    <h1>Transitions</h1>
+    <div class="box">
+      <p>Transition</p>
+      <br />
+      <p>*margin-left</p>
+    </div>
+    <br />
+    <div class="box2">
+      <p>Transform</p>
+      <br />
+      <p>*rotate*</p>
+    </div>
+    <br />
+    <div class="box3">
+      <p>Transform</p>
+      <br />
+      <p>*scale*</p>
+    </div>
+  </body>
+</html>
